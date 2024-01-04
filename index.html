@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="FA.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+</head>
+<body>
+  <!-- Menu Overlay -->
+  <div class="overlay" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1"><a href="#home">Home</a></li>
+        <li id="nav-2"><a href="#about">Connect</a></li>
+        <li id="nav-3"><a href="#skills">Skills</a></li>
+        <li id="nav-4"><a href="#projects">Projects</a></li>
+        <li id="nav-5"><a href="#contact">Availability</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu Bars-->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- Sections -->
+  <section id="home"><a href="https://github.com/grayhams74s" target="_blank">Angcot Design</a></section>
+
+  <!--Icons-->
+  <section id="about" class="about">
+
+    <!-- Icon 1-->
+    <a href="https://www.instagram.com/kedeooo/" target="_blank" style="text-decoration: none; color: white;" class="github-link" data-aos="fade-up" data-aos-delay="200"s>
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- Icon 2 -->
+    <a href="https://github.com/grayhams74s" target="_blank" style="text-decoration: none; color: white;" class="github-link1" data-aos="fade-down" data-aos-delay="200"> 
+      <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Icon 3-->
+    <a href="https://twitter.com/omnizephyru" target="_blank" style="text-decoration: none; color: white;" class="github-link2" data-aos="fade-up" data-aos-delay="200">
+      <i class="fab fa-twitter"></i>
+     </a>
+
+    <!-- Icon 4-->
+    <a href="https://www.facebook.com/profile.php?id=100080816709658" target="_blank" style="text-decoration: none; color: white;" class="github-link3" data-aos="fade-down" data-aos-delay="200">
+      <i class="fab fa-facebook"></i>
+     </a>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="icons-container">
+      <i class="fab fa-html5 html1" data-aos="fade-up" data-aos-delay="200"></i>
+      <i class="fab fa-css3-alt css1" data-aos="fade-up" data-aos-delay="500"></i>
+      <i class="fab fa-js javascript1" data-aos="fade-up" data-aos-delay="600"></i>
+      <i class="fab fa-node nodejs1" data-aos="fade-up" data-aos-delay="700"></i>
+      <i class="fab fa-react react1" data-aos="fade-up" data-aos-delay="800"></i>
+      <i class="fab fa-angular angular1" data-aos="fade-up" data-aos-delay="900"></i>
+      <i class="fab fa-vuejs  vuejs1" data-aos="fade-up" data-aos-delay="1000"></i>
+    </div>
+  </section>
+
+  
+  <section id="projects">
+    <div class="container">
+      <input type="radio" class="radio" name="progress" value="five" id="five">
+      <label for="five" class="label" data-aos="fade-down" data-aos-delay="200">5%</label>
+    
+      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
+      <label for="twentyfive" class="label" data-aos="fade-down" data-aos-delay="400">25%</label>
+    
+      <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+      <label for="fifty" class="label" data-aos="fade-down" data-aos-delay="600">50%</label>
+    
+      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
+      <label for="seventyfive" class="label" data-aos="fade-down" data-aos-delay="800">75%</label>
+    
+      <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+      <label for="onehundred" class="label" data-aos="fade-down" data-aos-delay="1000">100%</label>
+    
+      <div class="progress" data-aos="fade-up" data-aos-delay="200">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="contact">
+    <h1 data-aos="fade-left" data-aos-delay="200">M - F: 7AM - 5PM</h1>
+    <h1 data-aos="fade-right" data-aos-delay="400">S TO S: 11AM - 3PM</h1>
+  </section>
+
+
+  <section id="founder">
+    <div class="text-container-founder">
+      <h4 data-aos="fade-left" data-aos-delay="200">Designed By</h4>
+      <h1 data-aos="fade-left" data-aos-delay="400">Felix Angcot Jr</h1>
+    </div>
+
+    <a href="#home" class="icon-link">
+      <i class="fas fa-angle-double-up" data-aos="fade-up" data-aos-delay="2000"></i>
+    </a>
+  </section>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false,
+  });
+</script>
