@@ -7,6 +7,7 @@ const nav4 = document.getElementById('nav-4');
 const nav5 = document.getElementById('nav-5');
 
 
+
 function toggleNav() {
     // Toggle: Menu Bars Open/Closed
     menuBars.classList.toggle('change');
@@ -62,6 +63,7 @@ function toggleNav() {
 
     }
 }
+
 
 // Event Listeners
 menuBars.addEventListener('click', toggleNav);

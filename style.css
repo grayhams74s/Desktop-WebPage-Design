@@ -358,6 +358,7 @@ section#contact {
 
 section#founder {
   background-color: black;
+  cursor: pointer;
 }
 
 
@@ -370,6 +371,7 @@ section#founder {
   align-items: center;
   width: 50vw;
   font-size: 96px;
+  cursor: pointer;
 }
 
 .icons-container i {
@@ -532,6 +534,15 @@ body {
 .icon-link:hover {
   transform: translateY(-5px); /* Adjust the amount you want the icon to move up on hover */
 }
+
+.fab {
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.fab:hover {
+  transform: translateY(-10px); /* Adjust the value based on your preference */
+}
+
 
 
 
